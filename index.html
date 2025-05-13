@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Duomenų Analitikos Sprendimai Verslui</title>
+  <meta name="description" content="Padedu verslams analizuoti duomenis naudojant Power BI, Excel, SQL ir Python. Sukurkime jūsų sėkmės istoriją kartu.">
+  <meta name="keywords" content="Duomenų analitika, Power BI, Excel, SQL, verslo sprendimai, analitinės ataskaitos">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      margin-top: 20px;
+    }
+    h2 {
+      color: #003366;
+    }
+    .btn {
+      background-color: #007acc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003366;
+      color: white;
+      margin-top: 40px;
+    }
+    .dark-mode {
+      background-color: #1e1e1e;
+      color: #ddd;
+    }
+    .dark-mode section {
+      background-color: #2e2e2e;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Duomenų Analitikos Sprendimai</h1>
+    <p>Remiantis duomenimis. Sprendimai jums.</p>
+    <div>
+      <button class="btn" onclick="switchLanguage('lt')">LT</button>
+      <button class="btn" onclick="switchLanguage('en')">EN</button>
+      <button class="btn" onclick="toggleDark()">🌙 Tema</button>
+    </div>
+  </header>
+
+  <!-- LT -->
+  <section class="lang" data-lang="lt">
+    <h2>Apie Mane</h2>
+    <p>Esu duomenų analitikos specialistas, padedantis įmonėms paversti duomenis vertingomis įžvalgomis. Dirbu su Power BI, Excel, SQL ir Python.</p>
+  </section>
+  <section class="lang" data-lang="lt">
+    <h2>Siūlomos Paslaugos</h2>
+    <ul>
+      <li>Power BI ataskaitų kūrimas ir automatizavimas</li>
+      <li>Pardavimų, klientų ar finansų analizė</li>
+      <li>Excel ataskaitų transformavimas į prietaisų skydus</li>
+      <li>Duomenų struktūros optimizavimas ir SQL užklausos</li>
+    </ul>
+  </section>
+  <section class="lang" data-lang="lt">
+    <h2>Kaip Galiu Padėti</h2>
+    <ul>
+      <li>Kokie jūsų pelningiausi produktai ar klientai</li>
+      <li>Kur dingsta pelnas ir kur yra augimo potencialas</li>
+      <li>Kaip priimti sprendimus remiantis skaičiais, o ne nuojauta</li>
+    </ul>
+  </section>
+  <section class="lang" data-lang="lt">
+    <h2>Kontaktai</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <label>Jūsų vardas:<br><input type="text" name="name" required></label><br><br>
+      <label>El. paštas:<br><input type="email" name="email" required></label><br><br>
+      <label>Žinutė:<br><textarea name="message" rows="5" required></textarea></label><br><br>
+      <button type="submit" class="btn">Siųsti</button>
+    </form>
+  </section>
+
+  <!-- EN -->
+  <section class="lang" data-lang="en">
+    <h2>About Me</h2>
+    <p>I am a data analytics specialist helping companies turn data into valuable insights. I work with Power BI, Excel, SQL, and Python.</p>
+  </section>
+  <section class="lang" data-lang="en">
+    <h2>Services</h2>
+    <ul>
+      <li>Power BI report creation and automation</li>
+      <li>Sales, customer or financial analytics</li>
+      <li>Excel dashboards and visual reports</li>
+      <li>Data structure optimization and SQL queries</li>
+    </ul>
+  </section>
+  <section class="lang" data-lang="en">
+    <h2>How I Can Help</h2>
+    <ul>
+      <li>Which are your most profitable products or clients</li>
+      <li>Where profit leaks and where growth potential lies</li>
+      <li>How to make decisions based on data, not guesses</li>
+    </ul>
+  </section>
+  <section class="lang" data-lang="en">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <label>Your name:<br><input type="text" name="name" required></label><br><br>
+      <label>Email:<br><input type="email" name="email" required></label><br><br>
+      <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br><br>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Duomenų Analitikos Sprendimai | Andrejus Lesmanas</p>
+  </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(section => {
+        section.style.display = section.getAttribute('data-lang') === lang ? 'block' : 'none';
+      });
+    }
+    function toggleDark() {
+      document.body.classList.toggle('dark-mode');
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      switchLanguage('lt');
+    });
+  </script>
+</body>
+</html>
