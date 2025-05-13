@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://andriuslesmanas.github.io/duomenu-analitika/sitemap.xml
